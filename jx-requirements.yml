@@ -14,8 +14,11 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.99.218.17
   environments:
   - key: dev
+    owner: ibrahim00017
+    repository: jxtest
   - key: staging
   - key: production
   ingress:
@@ -27,6 +30,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: ibrahim00017
   repository: bucketrepo
   secretStorage: vault
   vault: {}
